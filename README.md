@@ -280,7 +280,7 @@ This project was built as the final project of the **NTI Internship** by:
 
 <div align="center">
 
-**Built by the Project X Team · NTI Internship · © 2025**
+**Built by the Project X Team · NTI Internship · © 2026**
 
 ⭐ If you found this project useful, consider giving it a star!
 
