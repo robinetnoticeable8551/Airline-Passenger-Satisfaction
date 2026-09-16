@@ -260,17 +260,28 @@ trip details and 14 service ratings.
 
 ---
 
-## 👤 Author
+## 👥 The Team
 
-**Zeyad Medhat**
-Data Scientist | Machine Learning Engineer
+This project was built as the final project of the **NTI Internship** by:
 
-💼 [LinkedIn](https://linkedin.com/in/zeyad-medhat) | 💻 [GitHub](https://github.com/zeyadmedhat) | 📧 zeyadmedhat.official@gmail.com
+<div align="center">
+
+| Team Member |
+|:-----------:|
+| **Yassin Abdullah** |
+| **Mohamed Emad** |
+| **Moaaz Ahmed** |
+| **Marwan Sherif** |
+| **Zeyad Medhat** |
+
+</div>
 
 ---
 
 <div align="center">
 
-**Developed by Zeyad Medhat | © 2025**
+**Built by the Project X Team · NTI Internship · © 2025**
+
+⭐ If you found this project useful, consider giving it a star!
 
 </div>
