@@ -47,6 +47,21 @@ def style_fig(fig, height=330, title=None, showlegend=True):
     return fig
 
 
+def f1_gradient(col):
+    """Colour a column across the app palette without pulling in matplotlib."""
+    stops = [(30, 58, 95), (42, 123, 155), (45, 212, 191)]   # SEQ as RGB
+    lo, hi = float(col.min()), float(col.max())
+    styles = []
+    for v in col:
+        t = 0.0 if hi == lo else (float(v) - lo) / (hi - lo)
+        seg = 0 if t < 0.5 else 1
+        f = t * 2 if seg == 0 else (t - 0.5) * 2
+        a, b = stops[seg], stops[seg + 1]
+        r, g, bl = (int(a[i] + (b[i] - a[i]) * f) for i in range(3))
+        styles.append(f"background-color: rgb({r},{g},{bl}); color: white")
+    return styles
+
+
 @st.cache_resource
 def load_model():
     return joblib.load('best_model.pkl')
@@ -134,8 +149,8 @@ if page == "🏠 Home":
         with c1:
             st.subheader("All models")
             st.dataframe(comparison.style.format("{:.4f}")
-                         .background_gradient(subset=['F1 Score'], cmap='BuGn'),
-                         use_container_width=True, height=330)
+                         .apply(f1_gradient, subset=['F1 Score']),
+                         width='stretch', height=330)
         with c2:
             st.subheader("F1 score by model")
             ordered = comparison.sort_values('F1 Score')
@@ -356,7 +371,7 @@ else:
              with cols[i % 3]:
                  ratings[col_name] = st.slider(col_name, 0, 5, 3)
 
-         submitted = st.form_submit_button("Predict Satisfaction", use_container_width=True)
+         submitted = st.form_submit_button("Predict Satisfaction", width='stretch')
 
      if submitted:
          # Build one row in exactly the format the transformer was fitted on
@@ -472,12 +487,12 @@ else:
                     st.info(f"The file included the real answer — accuracy on these "
                             f"{len(out):,} rows is **{(truth.values == preds).mean()*100:.2f} %**.")
 
-                st.dataframe(out.head(100), use_container_width=True, height=300)
+                st.dataframe(out.head(100), width='stretch', height=300)
                 st.caption("Showing the first 100 rows. The download has every row.")
                 st.download_button("Download all predictions",
                                    out.to_csv(index=False).encode('utf-8'),
                                    file_name="predictions.csv", mime="text/csv",
-                                   use_container_width=True)
+                                   width='stretch')
 
     st.markdown("---")
     st.caption(f"Predictions come from the {model_name} model "
