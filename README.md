@@ -96,7 +96,7 @@ Airline-Passenger-Satisfaction/
 
 ### 🔧 Training Workflow
 
-1. Data cleaning — drop `id`, fill missing arrival delays with the median
+1. Data cleaning — drop `id`, fill missing arrival delays with that flight's departure delay
 2. Exploratory analysis — seven questions about who is satisfied and why
 3. Feature selection — drop 5 features with near-zero correlation to the target
 4. Preprocessing — `StandardScaler` on numerics, `OneHotEncoder` on class
