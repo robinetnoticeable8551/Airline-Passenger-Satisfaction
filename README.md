@@ -1,6 +1,6 @@
 # ✈️ Airline Passenger Satisfaction Predictor
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-1.50.0-red?logo=streamlit)](https://streamlit.io/)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live_App-red?logo=streamlit)](https://airline-passenger-satisfaction-prediction-project.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-3.0.5-FF6600)](https://xgboost.readthedocs.io/)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.7.2-orange?logo=scikit-learn)](https://scikit-learn.org/)
@@ -10,9 +10,7 @@
 
 ## 🚀 Live Demo
 
-The app is ready to deploy but is not hosted yet.
-Follow [Deploy to Streamlit Community Cloud](#-deploy-to-streamlit-community-cloud) to publish it,
-then paste your link here.
+👉 **Try it here:** [Airline Passenger Satisfaction App](https://airline-passenger-satisfaction-prediction-project.streamlit.app/)
 
 ---
 
@@ -53,7 +51,7 @@ along with a **TreeSHAP explanation** showing exactly which factors drove that s
 ## 📂 Project Structure
 
 ```
-airline-passenger-satisfaction/
+Airline-Passenger-Satisfaction/
 │
 ├── Final_notebook.ipynb       # Cleaning, EDA, preprocessing, modelling, evaluation
 ├── app.py                     # Streamlit application
@@ -112,8 +110,8 @@ airline-passenger-satisfaction/
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/zeyadmedhat/airline-passenger-satisfaction.git
-   cd airline-passenger-satisfaction
+   git clone https://github.com/zeyadmedhat/Airline-Passenger-Satisfaction.git
+   cd Airline-Passenger-Satisfaction
    ```
 
 2. **Install dependencies**
